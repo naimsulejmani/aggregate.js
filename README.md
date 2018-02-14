@@ -13,17 +13,22 @@ var arr = [
 						{"shape":"square","color":"blue","used":4,"instances":5},
 						{"shape":"square","color":"red","used":2,"instances":1}
 					];
+					
 //specify columns 
+
 var columns =["used", "instances"];
 
 
 --initialize object
+
 var gb = new GroupBy(arr,columns);
 // or
+
 var gb = new GroupBy(arr,["used", "instances"]);
 
 
 // call the aggregate functions
+
 gb.sum();
 gb.min();
 gb.max();
