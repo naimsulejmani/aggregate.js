@@ -11,12 +11,12 @@ function GroupBy(array,columns){
   		if(type=='sum'||type=='avg'){
   			for(var str of columns){
 		        retArr[str]=0;
-    		}
+    			}
   		}
   		else if(type=='min' || type=='max'){
   			for(var str of columns){
 		        retArr[str]=array[0][str];
-    		}
+    			}
   		}
   	}
 
@@ -63,5 +63,5 @@ function GroupBy(array,columns){
 				    }
 				    return retArr;
 				}
-	}
+		}
 }
