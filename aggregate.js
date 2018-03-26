@@ -1,5 +1,4 @@
-
-function GroupBy(array,columns){
+exports.GroupBy= function (array,columns){
 	if(!array.length || !columns.length)
 		return;
 	var array=array;
