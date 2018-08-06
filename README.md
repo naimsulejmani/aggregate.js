@@ -30,3 +30,5 @@ gb.sum();
 gb.min();
 gb.max();
 gb.avg();
+gb.distinctCount();
+
