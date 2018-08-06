@@ -9,8 +9,7 @@ export function GroupBy(array, columns) {
 			for (var str of columns) {
 				retArr[str] = 0;
 			}
-		}
-		else if (type == 'min' || type == 'max') {
+		} else if (type == 'min' || type == 'max') {
 			for (var str of columns) {
 				retArr[str] = array[0][str];
 			}
@@ -59,18 +58,17 @@ export function GroupBy(array, columns) {
 			}
 			return retArr;
 		},
-		distinctCount:function(){
-			
+		distinctCount: function () {
 			var retObj = array.reduce(function (a, item) {
 				for (var str of columns) {
-					if(!retArr.hasOwnProperty(str)) retArr[str]={};
-					retArr[str][item[str]]=1;
+					if (!retArr.hasOwnProperty(str)) retArr[str] = {};
+					retArr[str][item[str]] = 1;
 				}
 				return retArr;
 			}, columns);
 
-			for (var str of columns){
-				retArr[str]=Object.keys(retArr[str]).length;
+			for (var str of columns) {
+				retArr[str] = Object.keys(retArr[str]).length;
 			}
 			return retArr;
 		}
