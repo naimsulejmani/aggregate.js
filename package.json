@@ -1,6 +1,6 @@
 {
   "name": "aggregate_groupby_js",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "The javascript library for using aggregate functions on array of objects",
   "main": "index.js",
   "scripts": {
