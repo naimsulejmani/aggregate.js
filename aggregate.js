@@ -62,6 +62,20 @@ function GroupBy(array,columns){
 				        retArr[str]/=array.length;
 				    }
 				    return retArr;
+				},
+				distinctCount: function () {
+					var retObj = array.reduce(function (a, item) {
+						for (var str of columns) {
+							if (!retArr.hasOwnProperty(str)) retArr[str] = {};
+							retArr[str][item[str]] = 1;
+						}
+						return retArr;
+					}, columns);
+		
+					for (var str of columns) {
+						retArr[str] = Object.keys(retArr[str]).length;
+					}
+					return retArr;
 				}
 		}
 }
