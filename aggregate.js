@@ -15,6 +15,11 @@ function GroupBy(array, columns) {
 				retArr[str] = array[0][str];
 			}
 		}
+		else if(type=='distinctCount'){
+			for (var str of columns) {
+				retArr[str] = {};
+			}
+		}
 	}
 
 	return {
@@ -62,6 +67,7 @@ function GroupBy(array, columns) {
 			return retArr;
 		},
 		distinctCount: function () {
+			initialize('distinctCount');
 			var retObj = array.reduce(function (a, item) {
 				for (var str of columns) {
 					if (!retArr.hasOwnProperty(str)) retArr[str] = {};
