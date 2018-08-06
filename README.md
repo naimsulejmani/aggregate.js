@@ -1,7 +1,7 @@
 ﻿# aggregate.js
 The javascript library for using aggregate functions on array of objects.
 
-Basic functions like SUM, MIN, MAX, AVG for entire javascript objects
+Basic functions like SUM, MIN, MAX, AVG, DISTINCT_COUNT for entire javascript objects
 
 
 Example:
