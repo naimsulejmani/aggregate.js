@@ -3,6 +3,8 @@
 
 *Basic functions like SUM, MIN, MAX, AVG, DISTINCT_COUNT for entire javascript objects*
 
+## How to install
+`npm i aggregate_groupby_js`
 
 **Example:**
 ```Javascript
